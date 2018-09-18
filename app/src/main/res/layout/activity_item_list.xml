@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemList">
+
+    <Button
+        android:id="@+id/list_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:text="Tomato"
+        android:onClick="addTomato"
+        android:gravity="right"
+        />
+
+    <Button
+        android:id="@+id/list_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:text="Salt"
+        android:layout_toRightOf="@id/list_one"
+        android:onClick="addSalt"/>
+
+    <Button
+        android:id="@+id/list_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:layout_toRightOf="@id/list_two"
+        android:text="Rice"
+        />
+    <Button
+        android:id="@+id/list_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:text="Pineapple"
+        android:layout_below="@id/list_one"
+        />
+
+    <Button
+        android:id="@+id/list_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Onion"
+        android:layout_toRightOf="@id/list_four"
+        android:layout_below="@id/list_two"
+        android:layout_alignBaseline="@id/list_four"/>
+
+    <Button
+        android:id="@+id/list_six"
+        android:layout_margin="@dimen/layout_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vinegar"
+        android:layout_below="@id/list_one"
+        android:layout_toRightOf="@id/list_five"
+        android:layout_alignBaseline="@id/list_five"/>
+
+    <Button
+        android:id="@+id/list_seven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cabbage"
+        android:layout_below="@id/list_four"
+        android:layout_margin="@dimen/layout_margin"/>
+
+    <Button
+        android:id="@+id/list_eight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Egg"
+        android:layout_below="@id/list_four"
+        android:layout_toRightOf="@id/list_four"
+        android:layout_alignBaseline="@id/list_seven"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zucchini"
+        android:layout_below="@id/list_four"
+        android:layout_toRightOf="@id/list_eight"
+        android:layout_margin="@dimen/layout_margin"
+        />
+
+</RelativeLayout>

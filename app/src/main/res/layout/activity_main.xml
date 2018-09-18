@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tomato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/salt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_margin="@dimen/layout_margin"
+        android:layout_below="@id/tomato" />
+
+    <TextView
+        android:id="@+id/rice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_margin="@dimen/layout_margin"
+        android:layout_below="@id/salt"/>
+
+    <TextView
+        android:id="@+id/pineapple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vinegar"
+        android:layout_margin="@dimen/layout_margin"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/onion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cabbage"
+        android:layout_margin="@dimen/layout_margin"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/vinegar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rice"
+        android:layout_margin="@dimen/layout_margin"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/cabbage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_margin="@dimen/layout_margin"
+        android:layout_below="@id/pineapple"/>
+
+    <TextView
+        android:id="@+id/egg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_margin="@dimen/layout_margin"
+        android:layout_below="@id/onion"/>
+
+    <TextView
+        android:id="@+id/zucchini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_margin="@dimen/layout_margin"
+        android:layout_below="@id/egg"/>
+
+    <TextView
+        android:id="@+id/item_ten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_margin="@dimen/layout_margin"
+        android:layout_below="@id/zucchini"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD ITEM"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="addItem"
+        />
+</RelativeLayout>
